@@ -1,0 +1,37 @@
+﻿<Page x:Class="Portfolio.Pages.RegistrationPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Portfolio.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="RegistrationPage">
+
+    <Grid Background="#BFF78D">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBlock FontSize="60" FontFamily="Times new roman" FontWeight="Light" 
+                   Foreground="#aaaaaa" VerticalAlignment="Center" Grid.ColumnSpan="3" Grid.Row="0" Grid.Column="1" 
+                   TextAlignment="Center">Регистрация</TextBlock>
+        <TextBox x:Name="BoxFirstName" Style="{StaticResource BoxLogin}" Grid.Column="1" Margin="0,0,80,0" Grid.ColumnSpan="2" Grid.Row="1"></TextBox>
+        <TextBox x:Name="BoxLastName" Style="{StaticResource BoxLogin}" Grid.Column="2" Margin="80,0,0,0" Grid.ColumnSpan="2" Grid.Row="1"></TextBox>
+        <TextBox x:Name="BoxLogin" Style="{StaticResource BoxLogin}"  Grid.Row="2" Grid.ColumnSpan="3" Grid.Column="1"></TextBox>
+        <PasswordBox x:Name="BoxFirstPass" Style="{StaticResource BoxPassword}" Grid.Row="3" Grid.ColumnSpan="2" Margin="0,0,80,0" Grid.Column="1"></PasswordBox>
+        <PasswordBox x:Name="BoxSecondPass" Style="{StaticResource BoxPassword}" Grid.Row="3" Grid.ColumnSpan="2" Margin="80,0,0,0" Grid.Column="2"></PasswordBox>
+        <Button MouseEnter="BTMenu_MouseEnter" Click="BTRegistration_Click" MouseLeave="BTMenu_MouseLeave" x:Name="BTRegistration" Style="{StaticResource BTMenu}" Grid.Row="4" Grid.Column="2" Margin="80,0,0,0" Grid.ColumnSpan="2">Зарегистрироваться</Button>
+        <Button MouseEnter="BTMenu_MouseEnter" Click="BTLogin_Click" MouseLeave="BTMenu_MouseLeave" x:Name="BTLogin" Style="{StaticResource BTMenu}" Grid.Row="4" Grid.Column="1" Margin="0,0,80,0" Grid.ColumnSpan="2">Войти</Button>
+    </Grid>
+</Page>
