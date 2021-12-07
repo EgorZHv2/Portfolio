@@ -50,6 +50,12 @@ namespace Portfolio.Pages
             LoginPage loginPage = new LoginPage();
             NavigationService.Navigate(loginPage);
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            TestPage testPage = new TestPage();
+            NavigationService.Navigate(testPage);
+        }
     }
    
 }

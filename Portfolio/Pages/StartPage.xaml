@@ -26,6 +26,6 @@
         <TextBlock FontSize="60" FontFamily="Times new roman" FontWeight="Light" Foreground="#aaaaaa" VerticalAlignment="Center" Grid.ColumnSpan="3" Grid.Row="0" Grid.Column="1" TextAlignment="Center">Портфолио</TextBlock>
         <Button x:Name="BTRegistration" Style="{StaticResource BTMenu}" Click="BTRegistration_Click" MouseEnter="BTMenu_MouseEnter" MouseLeave="BTMenu_MouseLeave" Margin="0,0,80,0"  Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="2">Зарегистрироваться</Button>
         <Button x:Name="BTLogin" Style="{StaticResource BTMenu}" Click="BTLogin_Click" MouseEnter="BTMenu_MouseEnter" MouseLeave="BTMenu_MouseLeave"  Margin="80,0,0,0" Grid.Column="2" Grid.ColumnSpan="2" Grid.Row="2">Войти</Button>
-    
+        <Button Click="Button_Click"></Button>
     </Grid>
 </Page>

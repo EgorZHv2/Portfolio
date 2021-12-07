@@ -26,8 +26,8 @@
         <TextBlock FontSize="60" FontFamily="Times new roman" FontWeight="Light" 
                    Foreground="#aaaaaa" VerticalAlignment="Center" Grid.ColumnSpan="3" Grid.Row="0" Grid.Column="1" 
                    TextAlignment="Center">Вход</TextBlock>
-        <TextBox Style="{StaticResource BoxLogin}" x:Name="BoxLogin" Grid.Row="2" Margin="0,0,0,50" Grid.ColumnSpan="3" Grid.Column="1"></TextBox>
-        <PasswordBox Style="{StaticResource BoxPassword}" x:Name="BoxPassword" Margin="0,0,0,50" Grid.Row="3" Grid.ColumnSpan="3" Grid.Column="1"></PasswordBox>
+        <TextBox Style="{StaticResource BoxLogin}" x:Name="BoxLogin" Grid.Row="1" Margin="0,0,0,0" Grid.RowSpan="2" Grid.ColumnSpan="3" Grid.Column="1"></TextBox>
+        <PasswordBox Style="{StaticResource BoxPassword}" x:Name="BoxPassword" Margin="0,0,0,0" Grid.Row="2" Grid.RowSpan="2" Grid.ColumnSpan="3" Grid.Column="1"></PasswordBox>
         <Button MouseEnter="BTMenu_MouseEnter" MouseLeave="BTMenu_MouseLeave" Style="{StaticResource BTMenu}" x:Name="BtRegistration" Click="BtRegistration_Click"  Grid.Row="4" Grid.ColumnSpan="2" Grid.Column="1" Margin="0,0,80,0">Зарегистрироваться</Button>
         <Button MouseEnter="BTMenu_MouseEnter" MouseLeave="BTMenu_MouseLeave" Style="{StaticResource BTMenu}" x:Name="BTLogin" Click="BTLogin_Click"  Grid.Row="4" Grid.ColumnSpan="2" Grid.Column="2" Margin="80,0,0,0">Войти</Button>
     </Grid>

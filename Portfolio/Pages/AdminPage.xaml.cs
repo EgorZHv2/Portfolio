@@ -12,27 +12,17 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using Portfolio.AppData;
 
 namespace Portfolio.Pages
 {
     /// <summary>
-    /// Interaction logic for TestPage.xaml
+    /// Interaction logic for AdminPage.xaml
     /// </summary>
-    public partial class TestPage : Page
+    public partial class AdminPage : Page
     {
-        public TestPage()
+        public AdminPage()
         {
             InitializeComponent();
-
-            List.ItemsSource = PortfolioEntities.GetContext().Users.ToList();
-            Users user = new Users()
-            {
-                FirstName = "Иван",
-                LastName = "Иванович",
-                Login = "Ivanovich",
-                Password = "12345678",
-            };
-        }       
+        }
     }
 }

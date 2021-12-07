@@ -15,7 +15,7 @@ namespace Portfolio.AppData
     
     public partial class PortfolioEntities : DbContext
     {
-        private static PortfolioEntities _context;
+        private static PortfolioEntities portfolio;
         public PortfolioEntities()
             : base("name=PortfolioEntities")
         {
@@ -27,11 +27,11 @@ namespace Portfolio.AppData
         }
         public static PortfolioEntities GetContext()
         {
-            if(_context == null)
+            if (portfolio == null)
             {
-                _context = new PortfolioEntities();
+                portfolio = new PortfolioEntities();
             }
-            return _context;
+            return portfolio;
         }
     
         public virtual DbSet<PotfolioText> PotfolioText { get; set; }

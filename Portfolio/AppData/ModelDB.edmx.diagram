@@ -5,8 +5,8 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="7f9cd45a129b4acbb0b18e141892e465" Name="Diagram1">
-        <EntityTypeShape EntityType="PortfolioModel.PotfolioText" Width="1.5" PointX="3" PointY="1.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="PortfolioModel.sysdiagrams" Width="1.5" PointX="2.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PortfolioModel.PotfolioText" Width="1.5" PointX="3.625" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="PortfolioModel.sysdiagrams" Width="1.5" PointX="10.25" PointY="1.75" IsExpanded="true" />
         <EntityTypeShape EntityType="PortfolioModel.Users" Width="1.5" PointX="0.75" PointY="0.875" IsExpanded="true" />
         <AssociationConnector Association="PortfolioModel.FK_PotfolioText_Users" ManuallyRouted="false" />
       </Diagram>
