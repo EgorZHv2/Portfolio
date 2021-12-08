@@ -14,7 +14,7 @@
             <ColumnDefinition></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition Width="2*"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
 
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
@@ -24,10 +24,22 @@
             <RowDefinition></RowDefinition>
 
         </Grid.RowDefinitions>
-        <DockPanel Grid.Column="4" Margin="15" LastChildFill="False">
-            <TextBox x:Name="BoxFirstName" Style="{StaticResource BoxLogin}"  DockPanel.Dock="Top"></TextBox>
-            <TextBox x:Name="BoxLastName" Style="{StaticResource BoxLogin}"  DockPanel.Dock="Bottom"></TextBox>
-        </DockPanel>
+        <Border Margin="5" BorderBrush="White" BorderThickness="3"  Grid.Column="0" Grid.ColumnSpan="2">
+            <DockPanel Grid.Column="3" Grid.ColumnSpan="2" Margin="10" LastChildFill="False">
+                <TextBox x:Name="BoxFirstName" Style="{StaticResource BoxLogin}"  DockPanel.Dock="Top"></TextBox>
+                <TextBox x:Name="BoxLastName" Style="{StaticResource BoxLogin}"  DockPanel.Dock="Bottom"></TextBox>
+            </DockPanel>
+        </Border>
+        <Border Margin="5" BorderBrush="White" BorderThickness="3" Grid.Column="2" Grid.ColumnSpan="3">
+            <StackPanel Orientation="Horizontal">
+                <Button Margin="15" x:Name="BTExit" Style="{StaticResource BTMenu}">Выйти</Button>
+                <Button Margin="15" x:Name="BTSave" Style="{StaticResource BTMenu}">Сохранить</Button>
+            </StackPanel>
+            
+        </Border>
+        <Border Margin="5" BorderBrush="White" BorderThickness="3" Grid.ColumnSpan="5" Grid.Row="1" Grid.RowSpan="3"></Border>
+           
+        
 
     </Grid>
 </Page>

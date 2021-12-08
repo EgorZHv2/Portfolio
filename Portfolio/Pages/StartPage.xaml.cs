@@ -53,7 +53,7 @@ namespace Portfolio.Pages
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            TestPage testPage = new TestPage();
+            UserPage testPage = new UserPage();
             NavigationService.Navigate(testPage);
         }
     }
