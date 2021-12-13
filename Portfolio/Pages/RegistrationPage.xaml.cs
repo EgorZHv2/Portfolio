@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Portfolio.AppData;
 
 namespace Portfolio.Pages
 {
@@ -39,10 +40,38 @@ namespace Portfolio.Pages
 
         private void BTRegistration_Click(object sender, RoutedEventArgs e)
         {
-            RegistrationPage registrationPage = new RegistrationPage();
-            NavigationService.Navigate(registrationPage);
-        }
+            bool error = false;
+            if (BoxFirstName.Text == "" | BoxLastName.Text == "" | BoxLogin.Text == "" | BoxPass.Password == "")
+            {
+                NotAllFields();
+                error = true;
+            }
+            for (int i = 1; i <= PortfolioEntities.GetContext().Users.Count(); i++)
+            {
+                
+                if (PortfolioEntities.GetContext().Users.Find(i).Login.ToLower() == BoxLogin.Text.ToLower())
+                {
+                    error = true;
+                    DoubleLogin();
+                }
+               
+            }
 
+
+            
+        }
+        async void NotAllFields()
+        {
+            BoxNotAllFields.Visibility = Visibility.Visible;
+            await Task.Delay(3000);
+            BoxNotAllFields.Visibility = Visibility.Hidden;
+        }
+        async void DoubleLogin()
+        {
+            BoxDoubleLogin.Visibility = Visibility.Visible;
+            await Task.Delay(3000);
+            BoxDoubleLogin.Visibility = Visibility.Hidden;
+        }
         private void BTLogin_Click(object sender, RoutedEventArgs e)
         {
             LoginPage loginPage = new LoginPage();

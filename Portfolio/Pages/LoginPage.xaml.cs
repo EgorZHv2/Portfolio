@@ -33,9 +33,7 @@ namespace Portfolio.Pages
 
         private void BTLogin_Click(object sender, RoutedEventArgs e)
         {
-            LoginPage loginPage = new LoginPage();
-            NavigationService.Navigate(loginPage);
-            
+           
         }
         private void BTMenu_MouseEnter(object sender, MouseEventArgs e)
         {

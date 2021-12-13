@@ -26,7 +26,7 @@ namespace Portfolio.Pages
             InitializeComponent();
 
             List.ItemsSource = PortfolioEntities.GetContext().Users.ToList();
-            Users user = new Users()
+            Users user = new Users() 
             {
                 FirstName = "Иван",
                 LastName = "Иванович",

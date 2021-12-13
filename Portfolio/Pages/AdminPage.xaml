@@ -24,12 +24,7 @@
             <RowDefinition></RowDefinition>
             
         </Grid.RowDefinitions>
-        <DockPanel Grid.Column="4" Margin="15" LastChildFill="False">
-            <TextBox x:Name="BoxFirstName" Style="{StaticResource BoxLogin}"  DockPanel.Dock="Top"></TextBox>
-            <TextBox x:Name="BoxLastName" Style="{StaticResource BoxLogin}"  DockPanel.Dock="Bottom"></TextBox>
 
-        </DockPanel>
-        
     </Grid>
     
 </Page>
